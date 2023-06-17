@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
+  background-size: cover;
+}
+
+
+h2{
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 10pxs;
+}
+.clock{
+    display: flex;
+}
+.clock div{
+    position: relative;
+    margin: 5px ;
+}
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color: slateblue;
+    opacity: .8;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 3px 4px rgb(245, 237, 237);
+}
+.clock .text{
+    color: white;
+    height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: darkblue;
+    opacity: .8;
+}
+#ampm{
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    font-size: 30px;
+    background-color: green;
+}
+
+button{
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+button a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
