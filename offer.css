@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+body {
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+    animation: logoLR;
+    animation-duration: 2s;
+  }
+  .logo a:hover {
+    text-shadow: 1px 1px 2px rgb(114, 107, 107);
+  }
+  
+  .nav-links {
+    width: 450px;
+    padding: 20px;
+    background-color: floralwhite;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    animation: navbarLinks;
+    animation-duration: 2s;
+    animation-direction:alternate ;
+   }
+  
+   @keyframes navbarLinks{
+    0%{
+      scale: 0;
+    }
+    100%{
+      scale: 1;
+    }
+   }
+   .right-icons{
+    animation: logoLR;
+    animation-duration: 2s;
+    transition: opacity ease-in;
+    margin-right: 50px;
+  justify-content: space-between;  display: flex;
+    list-style: none;
+   }
+  
+   @keyframes logoLR{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+   }
+   .right-icons a{
+    text-decoration: none;
+    margin-right: 20px;
+    color:black;
+  
+   }
+   .right-icons .time {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: purple;
+    color: white;
+   }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  .nav-links li :hover {
+    text-shadow: 1px 1px 2px rgb(126, 114, 114);
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+
+  .container{
+    position: absolute;
+    width: 100%;
+    margin: 50px;
+    margin-top: 15%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+  }
+
+  .offer{
+    animation: offer;
+    animation-duration: 4s;
+    transition: all 500ms ease-out;
+    text-align: justify;
+    width: 30%;
+  }
+
+  @keyframes offer{
+    0%{
+        position:relative;
+        bottom:-120px;
+        opacity: 0;
+    }
+    100%{
+        bottom:120px;
+        opacity: 1;
+    }
+  }
+  button{
+    width: 80px;
+    height: 50px;
+    border-radius: 20px;
+    transition: all 200ms ease;
+    border: none;
+    box-shadow: 0 5px 5px black;
+  }
+
+  button:hover{
+    background-color: purple;
+    color: white;
+  }
+
+  img{
+    border-radius: 20px;
+    transform: skew(-15deg);
+    box-shadow: 0 3px 4px rgb(68, 65, 65);
+    margin-top: -30px;
+    height: 400px;
+    animation: skew;
+    animation-duration: 2s;
+    transition: all 500ms ease-in-out;
+  }
+
+  @keyframes skew{
+    0%{
+        transform: skew(15deg);
+    }
+    100%{
+        transform: skew(-15deg);
+    }
+  }
